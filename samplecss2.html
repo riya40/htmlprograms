@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css working</title>
+        <style>
+            h1{
+                color: green;
+            }
+            ul.menu{
+                padding: 0%;
+
+                list-style: none;
+            }
+            ul.menu li{
+                display: inline;
+            }
+            ul.menu li a{
+                margin: 5px;
+                text-decoration: underline;
+            }
+            ul >li {
+                list-style:circle;
+            }
+            ul >li ol{
+                 list-style: none;
+                }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="blue">heading1</h1>
+        <h2 class="red">heading2</h2>
+        <p class="lavender"> its seccond paragrapg</p>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a>
+            <ol>
+                <li><a href="#">ui designing</a></li>
+                <li><a href="#">ui designing</a></li>
+            </ol><!--clid selector -->
+            </li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </body>
+</html>

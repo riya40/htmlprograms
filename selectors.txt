@@ -1,0 +1,492 @@
+[12:02 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(universal selector)</title>
+
+        <style>
+
+            *{
+
+                margin: 15;
+
+                padding: 2%;
+
+            }
+
+        </style>
+
+
+
+
+
+
+
+[12:04 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(Element type selector)</title>
+
+        <style>
+
+            p {
+
+                color:blue;
+
+            }
+
+        </style>
+
+
+
+
+
+
+
+[12:07 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(ID selector)</title>
+
+        <style>
+
+            #error{
+
+                color:red;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>This is first heading</h1>
+
+        <p id="error">This is first Heading and its warning</p>
+
+    </body>
+
+
+
+
+
+
+
+[12:11 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(class selector)</title>
+
+        <style>
+
+           .blue{
+
+            color:skyblue;
+
+           }
+
+           .red{
+
+            color:orangered;
+
+           }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 class="blue">This is first heading</h1>
+
+        <h2 class="red">This is first Heading and its warning</h2>
+
+
+
+
+
+
+
+[12:14 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(class selector)</title>
+
+        <style>
+
+           .blue{
+
+            color:skyblue;
+
+           }
+
+           p.red{
+
+            color:orangered;
+
+           }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 class="blue">This is first heading</h1>
+
+        <p class="red">This is first Heading and its warning</p>
+
+        <p> Its second paragrah</p>
+
+
+
+
+
+
+
+[12:24 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(Descendent selector)</title>
+
+        <style>
+
+           h1{
+
+            color:green;
+
+           }
+
+           ul.menu{
+
+            padding:0%;
+
+            list-style: none;
+
+           }
+
+           ul.menu li{
+
+            display: inline;
+
+            }
+
+
+
+
+            ul.menu li a{
+
+                margin: 5px;
+
+                text-decoration:overline;
+
+            }
+
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 >This is first heading</h1>
+
+        <ul class ="menu">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About us</a></li>
+
+            <li><a href="#">Services</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+       
+
+    </body>
+
+
+
+
+
+
+
+[12:29 pm] Gurjot Brar
+
+
+
+
+<head>
+
+        <title>working with CSS(Child selector)</title>
+
+        <style>
+
+           h1{
+
+            color:green;
+
+           }
+
+           
+
+           ul >li {
+
+            list-style: circle;
+
+           }
+
+           ul >li ol{
+
+            list-style: none;
+
+           }
+
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 >This is first heading</h1>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About us</a></li>
+
+            <li>
+
+                <a href="#">Services</a>
+
+                <ol>
+
+                    <li><a href="#">UI designing</a></li>
+
+                    <li><a href="#">Code development</a></li>
+
+                </ol>
+
+            </li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+       
+
+    </body>
+
+
+
+
+
+
+
+[12:38 pm] Gurjot Brar
+
+
+
+
+<head>
+
+        <title>working with CSS(Adjacent sibling selector)</title>
+
+        <style>
+
+           h1 + p{
+
+            color:green;
+
+            font-size: 20px;
+
+           }
+
+           
+
+           ul.list1 + p {
+
+            color: blueviolet;
+
+            text-indent: 30px;
+
+           }
+
+         
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>This is first heading</h1>
+
+        <p> This is paragraph</p>
+
+
+
+
+        <ul class="list1">
+
+            <li>Home</li>
+
+            <li>About us</li>
+
+            <li>Services</li>
+
+        </ul>
+
+        <p> This is 2 paragraph</p>
+
+        <p> This is 3 paragraph</p>
+
+    </body>
+
+
+
+
+
+
+
+[12:40 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(General sibling selector)</title>
+
+        <style>
+
+           h1 ~ p{
+
+            color:green;
+
+            font-size: 20px;
+
+           }
+
+           
+
+           ul.list1 ~ p {
+
+            color: blueviolet;
+
+            text-indent: 30px;
+
+           }
+
+         
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>This is first heading</h1>
+
+        <p> This is 1st paragraph</p>
+
+        <p> This is 1st sub paragraph</p>
+
+
+
+
+        <ul class="list1">
+
+            <li>Home</li>
+
+            <li>About us</li>
+
+            <li>Services</li>
+
+        </ul>
+
+        <p> This is 2 paragraph</p>
+
+        <p> This is 3 paragraph</p>
+
+    </body>
+
+
+
+
+
+
+
+[12:45 pm] Gurjot Brar
+
+
+
+
+<title>working with CSS(group selector)</title>
+
+        <style>
+
+           h1{
+
+            font-size: 30px;
+
+            color: red;
+
+            font-weight: bolder;
+
+           }
+
+          h2{
+
+            font-size: 20px;
+
+            color: greenyellow;
+
+            font-weight:lighter;
+
+             }
+
+          h3{
+
+            font-size: 15px;
+
+            color:fuchsia;
+
+            font-weight:normal;
+
+          }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>This is first heading</h1>
+
+        <h2>This is first heading</h2>
+
+        <h3>This is first heading</h3>
+
+    </body>
+
+
